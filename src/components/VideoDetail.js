@@ -4,7 +4,6 @@ import {Paper, Typography} from '@mui/material'
 
 const VideoDetail = ({video}) => {
   if(!video) return <div>Loading ...</div>
-  console.log(video)
 
   const videoSrc = `https://www.youtube.com/embed/${video.id.videoId}`
 
@@ -12,7 +11,6 @@ const VideoDetail = ({video}) => {
     <React.Fragment>
       <Paper elevation={6} style={{ height: "70%" }}>
         <iframe
-          frameBorder="0"
           src={videoSrc}
           height="100%"
           width="100%"
